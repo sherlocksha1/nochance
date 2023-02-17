@@ -164,9 +164,9 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-    btn.insert(0,
+        btn.insert(0,
             [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
-        )         
+        )                     
 
 
     if 0 < offset <= 10:
