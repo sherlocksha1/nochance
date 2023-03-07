@@ -71,9 +71,6 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID')
 # This is required for the plugins involving the file system.
 TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 
-# the maximum number of 'selectable' messages in Telegram
-TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
-
 # Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
