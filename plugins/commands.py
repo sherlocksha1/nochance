@@ -57,16 +57,17 @@ async def start(client, message):
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message): 
         try:
-            invite_link = (await client.create_chat_invite_link(
-            chat_id=int(AUTH_CHANNEL),
-            creates_join_request=True
-            ))
+            invite_link_obj = await client.create_chat_invite_link(
+                chat_id=int(AUTH_CHANNEL),
+                creates_join_request=True
+            )
+            invite_link = invite_link_obj.invite_link
         except ChatAdminRequired:
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
         btn = [[ 
                 InlineKeyboardButton(
-                    "🎗 Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ 🎗", url=invite_link.invite_link)
+                    "🎗 Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ 🎗", url=invite_link)
         ],[
                 InlineKeyboardButton
                    ("㋡ Wʜʏ I'ᴍ Jᴏɪɴɪɴɢ", callback_data='whyjoin')
@@ -85,6 +86,7 @@ async def start(client, message):
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
+
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton('തൊടരുത്', callback_data='start')
