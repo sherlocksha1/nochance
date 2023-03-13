@@ -48,7 +48,7 @@ async def is_subscribed(bot, message):
     if message.from_user.id in ADMINS:
         return True
     return False
-
+ 
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:
         # https://t.me/GetTGLink/4183
