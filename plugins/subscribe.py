@@ -5,7 +5,7 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import ChatJoinRequest
 from info import ADMINS, AUTH_CHANNEL
-from database.users_chats_db import db
+from database.users_chats_db import db 
 
 
 @Client.on_chat_join_request(filters.chat(AUTH_CHANNEL if AUTH_CHANNEL else "self"))
