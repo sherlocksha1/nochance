@@ -61,9 +61,9 @@ async def start(client, message):
             chat_id=int(AUTH_CHANNEL),
             creates_join_request=True
             ))
-         except ChatAdminRequired:
-             logger.error("Make sure Bot is admin in Forcesub channel")
-             return
+        except ChatAdminRequired:
+            logger.error("Make sure Bot is admin in Forcesub channel")
+            return
         btn = [[
                 InlineKeyboardButton(
                     "🎗 Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ 🎗", url=invite_link)
