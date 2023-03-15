@@ -80,7 +80,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("㋡ Wʜʏ I'ᴍ Jᴏɪɴɪɴɢ", callback_data="whyjoin")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Fɪʀsᴛ ᴄʟɪᴄᴋ ᴏɴ Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ ʙᴜᴛᴛᴏɴ . ᴛʜᴇɴ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ᴄʟɪᴄᴋ ᴏɴ ᴍᴇ ᴊᴏɪɴᴇᴅ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ...**",
+            text="**--♦️ READ THIS INSTRUCTION ♦️--\n\n🗣 നിങ്ങൾക്ക് സിനിമ കിട്ടണമെങ്കിൽ താഴെക്കാണുന്ന 📢 REQUEST TO JOIN CHANNEL 📢 എന്നത് ക്ലിക്ക് ചെയ്ത് Request to Join channel എന്നത് ക്ലിക്ക് ചെയ്ത് 🔄 Try Again കൊടുത്ത ശേഷം സിനിമ കിട്ടുന്നതാണ്😍\n\n🗣 In Order To Get The Movie Requested By You in Our Group, You Must Have To Join Our Official Channel First By Clicking 📢 REQUEST TO JOIN CHANNEL 📢 Button or the Link shown Below. After That, Click 🔄 Try Again 🔄 Button. I'll Send You That Movie File📂**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
