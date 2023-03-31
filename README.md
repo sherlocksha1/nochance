@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/930ff28f8e22e70b00cfa.jpg" alt="Devil Botz">
+  <img src="https://telegra.ph/file/40892e0c1f5d395f49324.jpg" alt="𝗠𝗿.𝗕𝗲𝗮𝗻">
 </p>
 <h1 align="center">
   <b>Elsa</b>
@@ -15,7 +15,6 @@
 </p>
 
 ## Features
-
 - [x] Auto Filter
 - [x] Manual Filter
 - [x] IMDB
