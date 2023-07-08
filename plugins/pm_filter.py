@@ -1500,7 +1500,7 @@ async def manual_filters(client, message, text=False):
                             else:
                                 try:
                                     if settings['set_del']:
-                                        await asyncio.sleep(600)
+                                        await asyncio.sleep(120)
                                         await joelkb.delete()
                                 except KeyError:
                                     grpid = await active_connection(str(message.from_user.id))
